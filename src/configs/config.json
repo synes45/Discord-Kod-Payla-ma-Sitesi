@@ -1,0 +1,19 @@
+{
+  " domain": "ankacode.xyz",
+  "guildID": "809835006721392664",
+  "guildInvite": "https://discord.gg/ankacode",
+  "codeLog": "853166696214691851",
+  "bugLog": "853166696214691851",
+  "ownerRole": "853166652594192404",
+  "adminRole": "853166658323873822",
+  "codeSharer": "829771830117400656",
+  "booster": "814460271723937833",
+  "notCodeSharer": ["909873833274671175"],
+  "readySystemsRole": "853166664521482240",
+  "diaRole": "829771782075580446",
+  "goldRole": "829771790024310865",
+  "normalRole": "829771804352577587",
+  "htmlRole": "829771817077440564",
+  "digerRole": "829771834601242704",
+  "altyapiplusRole": "829771794252169237"
+}

@@ -1,0 +1,144 @@
+<html>
+  <head>    
+  <%- include('partials/_header'); -%>
+	<!-- * LINKS * -->	
+	<link rel="stylesheet" href="https://quark-whimsical-bonnet.glitch.me//style.css">
+	<link rel="icon" href="images/cedar.png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet" type="text/css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+	<!-- * JAVA SCRIPT * -->	
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+<body>
+
+
+	<!-- * PRELOADER * -->
+
+  	<div class="loader-wrapper">
+      	<span class="loader"><span class="loader-inner"></span></span>
+  	</div>  
+
+	<!-- * HEADER + NAV * -->
+	
+	<section class="banner" id="home">
+    <div class="overlay"></div>		
+		<div class="content" data-aos="fade-left" data-aos-duration="1000">
+			<h2>
+				Merhaba,<br>
+				<span>Hoş Geldin!</span>
+			</h2>
+
+			<p>
+				Discord Kod Paylaşım Sitesi! Bu Siteden Dilediğin Kodlara Hızlı ve Ücretsiz Bir Şekilde Ulaşabilirsin. Yapman Gereken Tek Şey Siteye Giriş Yapmak. Anka Code En İyisi Olmaya Geliyoruz.
+			</p>
+			<a href="https://discord.com/invite/ankacode" style="text-decoration:none;background-color:#5865F2" target="_blank"><i class="fab fa-discord" style="margin-right: 11px; font-size: 22px;"></i>Sunucumuza Katıl!</a>
+
+		</div>	
+
+	</section>
+
+
+	
+	<!-- * ABOUT US * -->
+
+	<section class="services p-t-30" id="about">
+		<h1><span>Anka Code</span> Hakkında</h1>
+		<div class="container">
+			<div class="service">
+				<i class="fas fa-headset"></i>
+				<h2>DESTEK & GELİŞTİRME</h2>
+				<p>
+					Botunda Oluşan Sorunlarda veya Yapamadığın Kodlarda Sunucumuzdaki Destek Kanallarından Dilediğin Kadar Ücretsiz Bir Şekilde Destek Alabilirsin. 
+				</p>
+			</div>
+
+			<div class="service">
+				<i class="fas fa-shield-alt"></i>
+				<h2>YETKİLİ EKİBİ</h2>
+				<p>
+					Alanında Uzman Yetkili Ekibimiz En İyi Şekilde Size Yardımcı Olmaya Çalışıyor. Ekibimiz Size Daha Güzel Bir Discord Sunucusu Sunmak İçin Çalışmaktadır. 
+				</p>
+			</div>
+			<div class="service">
+			<i class="fas fa-laptop-code"></i>
+				<h2>ÜCRETSİZ KODLAR</h2>
+				<p>
+					Hiçbir Ücret İstemeden Size Ücretsiz Bir Şekilde Bot Kodları Sunuyoruz. Sadece Arkadaşlarını Sunucumuza Davet Ederek Daha Özel Kodlara Sahip Olabilirsin.
+				</p>
+			</div>
+			<div class="service" style="width: 80% !important; margin-top: 50px;">
+			<i class="fas fa-star"></i>
+
+				<p>
+					En İyisi Olmak İçin Çabalayan Anka Code 12.02.2021 Tarihinde Voxic ve Gravity Tarafından 2 Ortak İle Kuruldu, Sunucumuz Yaklaşık 3500'den Fazla Üyeye Sahip ve Her Geçen Gün Bu Sayı Artmaktadır. Gelecek Zamanlarda Market Sunucusu, Oyun Sunucusu Gibi Planlarımızda Bulunmakta. Sende Şuan Discord Sunucumuza Katılıp Ücretsiz Bir Şekilde Botunuzu Geliştirebilirsin.
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+<!-- * DISCORD * -->
+
+	<div class="discord">
+		<div class="text">
+			<h1>Sunucumuza Hala<br>Göz Atmadın Mı?</h1>
+			<a href="https://discord.com/invite/ankacode" target="_blank">Hemen Katıl!</a>
+		</div>
+		<div class="discordImg">
+			<img src="https://cdn.discordapp.com/attachments/853166696214691851/963043393204801596/Discord-LogoWordmark-Black.png">
+<!-- 			<iframe src="https://canary.discordapp.com/widget?id=627235926929571840&theme=dark" width="350" height="250" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+		</div>
+	</div>
+
+
+
+	<!-- * FOOTER * -->
+
+<div class="footer">
+<h2><span style="color: #5865f2 ;">Anka <span style="color: #fff ;">Code</span></h2>
+<div class="footerLinks">
+<a href="#" style="color: #5865f2 ;"><i class="fa fa-home" aria-hidden="true"></i> Ana Sayfa</a>
+<a href="#about"><i class="far fa-question-circle"></i></i> Hakkımızda</a>
+<a href="/authorized"><i class="fas fa-user-shield"></i></i> Yetkililerimiz</a>
+<a href="/discord" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+</div>
+<p class="copyright">
+&copy; Tüm Hakları Saklıdır
+</p>
+</div>
+<p class="credits">
+Powered
+<span> by Voxic</span>
+<span></span>
+</p>
+
+<button id="back-to-top-btn"><i class="fa fa-angle-up"></i></button>
+
+<script>
+	// TOGGLE EFFECT
+		function toggle() {
+			var home = document.getElementById('home');
+			var nav = document.getElementById('navigation');
+			home.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+<script>
+  	// PRELOADER EFFECT
+    	$(window).on("load",function(){
+     	$(".loader-wrapper").fadeOut("slow");
+    	});
+  	</script>
+<script>
+  		// ANIMATE ON SCROLL
+  		AOS.init();
+	</script>
+<script src="https://purple-silver-helicona.glitch.me/Javascript/main.js"></script>
+</body>
+</html>

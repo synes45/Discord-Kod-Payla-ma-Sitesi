@@ -1,0 +1,7 @@
+{
+   "mongoURL": "mmongodb+srv://voxic:voxic123@voxic.pvpjj.mongodb.net/voxicc?retryWrites=true&w=majority",
+  "clientID": "814756722559156265",
+  "token": "",
+  "secret": "JNVTYlVQl2usd-jqkzkvalS9VdhWoKoI",
+  "callbackURL": "https://ankacode.xyz/callback"
+}

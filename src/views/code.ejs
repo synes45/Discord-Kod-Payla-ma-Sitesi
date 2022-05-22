@@ -1,0 +1,167 @@
+<link rel="icon" href="https://cdn.discordapp.com/attachments/853166696214691851/963044356179234856/ankacode3.png" type="image/x-icon" />
+<meta property="og:url" content="/">
+<meta property="og:image:type" content="https://cdn.discordapp.com/attachments/853166696214691851/963044356179234856/ankacode3.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Anka Code - Kod Paylaşım Sitesi"/>
+<meta property="og:title" content="Anka Code - Kod">
+<meta name="theme-color" content="#1c1c1c ">
+<meta property="og:description" content="Anka Code Discord Sunucusuna Bağlı Olan Bir İnternet Sitesidir. Bu Site Üzerinden Kolaylıkla Discord Bot Kodlarına veya Altyapılarına Ulaşabilirsiniz.">
+<meta property="og:type" content="website">
+<meta property="og:footer" content="Developed by Voxic">
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/853166696214691851/963044356179234856/ankacode3.png">
+<title>Anka Code - Kod</title>
+<link rel="icon" href="<%= icon %>" type="image/x-icon" />
+<link rel="stylesheet" href="/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+<nav style="margin-left:2%;margin-right:0%;"class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top" id="mainNav">
+  <a class="deneme navbar-brand" style="margin-left:7px;padding:7px" href="/"><img src="<%= icon %>" style="border-radius: 100%" width="30" height="30">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="deneme nav-item dropdown">
+        <a class="nav-item nav-link active  dropdown-toggle" href="#" data-toggle="dropdown"><i class="fas fa-code"></i> Kodlar</a>
+        <div class="dropdown-menu bg-transparent">
+           <a class="dropdown-item font-weight-bold" href="/js" style="color: #ffcc00;"><i class="fab fa-js-square"></i> JavaScript</a>
+           <a class="dropdown-item font-weight-bold" href="/html" style="color: #ffcc00;"><i class="fab fa-html5"></i> HTML</a>
+           <a class="dropdown-item font-weight-bold" href="/altyapi" style="color: #ffcc00;"><i class="fas fa-file-code"></i> Altyapı</a>
+          <a class="dropdown-item font-weight-bold" href="/diger" style="color: #ffcc00;"><i class="fas fa-code"></i> Diğer</a>
+          <div class="dropdown-divider" style="border-top:1px solid #5865f2"></div>
+            <a class="dropdown-item font-weight-bold" href="/topluluk" style="color: #ffcc00;"><i class="fas fa-users"></i></i> Sizden Gelenler</a>
+                    <li class="deneme nav-item dropdown">
+                 <a class="nav-item nav-link active  dropdown-toggle" href="#" data-toggle="dropdown"><i class="far fa-gem"></i> Özel Kodlar</a>
+                     <div class="dropdown-menu bg-transparent">
+                  <a class="dropdown-item font-weight-bold" href="/jsplus" style="color: #ffcc00;"><i class="fas fa-plus-square"></i></i> JavaScript+</a>
+                    <a class="dropdown-item font-weight-bold" href="/bdfd" style="color: #ffcc00;"><i class="fas fa-terminal"></i></i> BDFD</a>
+  <a class="dropdown-item font-weight-bold" href="/altyapiplus" style="color: #ffcc00;"><i class="far fa-plus-square"></i></i></i> Altyapı+</a>
+           </div>
+        
+      </li>
+<li class="deneme nav-item">
+          <a class="nav-item nav-link active" href="/authorized"><i class="fas fa-user-shield"></i></i> Yetkililerimiz</a>
+      </li>
+      <li class="deneme nav-item">
+        <a class="nav-item nav-link active" href="/information"><i class="fas fa-info-circle"></i> Bilgilendirme</a>
+      </li>
+<li class="deneme nav-item">
+        <a class="nav-item nav-link active" href="/premium"><i class="fas fa-shopping-basket"></i></i> Premium Al</a>
+      </li>
+    </ul>
+
+    <% if (user) { %>
+    <ul class="navbar-nav" style="margin-right:31px;">
+      <% if (reqMember && reqMember.hasPermission(8)) { %>
+      <li class="deneme nav-item">
+       <a class="nav-item nav-link active" href="/admin"><i class="fas fa-user-cog"></i> Admin Paneli</a>
+      </li>
+      <% } %>
+      <li class="deneme nav-item">
+      <a class="nav-item nav-link active" href="/paylas"><i class="fas fa-plus"></i> Kod Paylaş</a>
+      </li>
+
+      <li class="deneme nav-item dropdown">
+        <a class="nav-item nav-link active dropdown-toggle"><%= user.username %></a>
+        <div class="dropdown-menu bg-transparent dropdown-menu-right">
+          <a class="btn btn-outline-light" href="/profil/<%= user.id %>"><i class="far fa-user"></i> Profil</a
+            >
+          <div class="dropdown-divider"></div>
+         <a class="btn btn-outline-danger" href="/logout"
+              ><i class="fas fa-sign-out-alt"></i> Çıkış Yap</a
+            >
+        </div>
+      </li>
+    </ul>
+
+   <% } else { %>
+      <a class="btn btn-outline-dark" style="margin-right: 20px; filter: invert(1);" href="/login"><i class="fas fa-sign-out-alt"></i> Giriş Yap</a>
+    <% } %>
+  </div>
+</nav>
+     <%- include('partials/_header'); -%>
+    <%- include('partials/_loader'); -%>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs-okaidia-theme@0.0.1/prism-okaidia.css">
+    <div class="container" style="min-height: 100vh; text-align: center;">
+      <h2 style="margin-top: 100px;"><%= data.name %></h2>
+      <br>
+      <h5 style="color: gray;"><%= data.desc %></h5>
+      <br>
+      <h5>Modüller: <kbd><%= data.modules %></kbd></h5>
+      <br><br>
+      <h5>
+        <% data.sharers.map(s => {
+          %>
+        <a href="/profil/<%= s %>" style="text-decoration: none; margin: 0 10px;">
+          <% if(guild.members.cache.get(s)) { %> <img src="<%= guild.members.cache.get(s).user.displayAvatarURL({ dynamic: true }) %>" style="border-radius: 100%; width: 50px; height: 50px;"><%}%>
+        <% if(guild.members.cache.get(s)) { %> <%= guild.members.cache.get(s).user.username %> <%} else {%> Paylaşan kişi bilinmiyor <%}%>
+        </a>
+        <% }); %>
+      </h5>
+      <br>
+      <% if (!data.bug) { %>
+      <a href="/bug/<%= data.id %>"><span class="fas fa-exclamation-triangle" style="color:#ff0007; float:right; margin-left: 20px; cursor: pointer;"></span></a>
+      <% } else { %>
+      <h6><span style="color: red;">Dikkat:</span> Bu Kodda Hata Bildirilmiştir! Yetkililerimiz En Kısa Sürede İlgileneceklerdir.</h6>
+      <% } %>
+      <a href="javascript:$('#likeForm').submit()" id="likeButton">
+        <span id="like" style="color:#ff0007; float:right" class="<%= data.likedUsers.includes(user.id) ? 'fas fa-heart' : 'far fa-heart' %>">
+          <span id="likeText"><%= data.likedUsers ? data.likedUsers.length : 0 %></span>
+        </span>
+      </a> 
+      <% if (data.mainCode) { %>
+      <h2 style="text-align: left;">Main Kodu: <a onclick="kopyala('kaynak')"><i class="far fa-copy" id="mainIcon"></i></a></h2>
+      <pre style="height: 40pc; overflow-y: scroll"><code class="language-js" id="kaynak"><%= data.mainCode %></code></pre>
+      <br>
+      <% } %>
+      <% if (data.command) { %>
+      <h2 style="text-align: left;">Komut: <a onclick="copy('commandIcon')"><i class="far fa-copy" id="commandIcon"></i></a></h2>
+      <pre style="height: 40pc; overflow-y: scroll"><code class="language-js" id="command"><%= data.command %></code></pre>
+      <% } %>
+      <% if (data.sharers.includes(user.id) || reqMember.hasPermission(8)) { %>
+      <a href="/edit/<%= data.rank %>/<%= data.id %>" class="btn btn-outline-info" style="width: 100%;">Kodu Düzenle</a>
+      <br><br>
+      <a href="/delete/<%= data.rank %>/<%= data.id %>" class="btn btn-outline-danger" style="width: 100%;">Kodu Sil</a>
+      <% } %>
+      <form id="likeForm" action="/like" method="POST">
+        <input name="id" id="likeName" type="hidden" value="<%= data.id %>">
+      </form>
+    </div>
+
+    <script>
+      if (localStorage.getItem("mode") != "") {
+        document.body.classList.add(localStorage.getItem("mode"));
+        document.getElementById("mode-btn").checked = true;
+      }
+      
+      const copy = (icon) => {
+        const btn = document.getElementById(icon);
+        btn.style.color = "green";
+        setTimeout(() => btn.style.color = "#b8b8b8", 1000);
+        icon = icon.replace("Icon", "");
+        copyText(document.getElementById(icon).textContent)
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="/index.js"></script>
+
+   <script>
+   function kopyala(elemanID){
+  var cop = document.createElement("div");
+  cop.setAttribute("contentEditable", true);
+  cop.innerHTML = document.getElementById(elemanID).innerHTML;
+  cop.setAttribute("onfocus", "document.execCommand('selectAll',false,null)"); 
+  document.body.appendChild(cop);
+  cop.focus();
+  document.execCommand("copy");
+  document.body.removeChild(cop);
+}
+   </script>
+    <%- include('partials/_footer'); -%>
+  </body>
+</html>

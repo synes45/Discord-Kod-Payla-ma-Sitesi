@@ -1,0 +1,129 @@
+<link rel="icon" href="https://cdn.discordapp.com/attachments/853166696214691851/963044356179234856/ankacode3.png" type="image/x-icon" />
+<meta property="og:url" content="/">
+<meta property="og:image:type" content="https://cdn.discordapp.com/attachments/853166696214691851/963044356179234856/ankacode3.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Anka Code - Kod Paylaşım Sitesi"/>
+<meta property="og:title" content="Anka Code - Admin Paneli">
+<meta name="theme-color" content="#1c1c1c ">
+<meta property="og:description" content="Anka Code Discord Sunucusuna Bağlı Olan Bir İnternet Sitesidir. Bu Site Üzerinden Kolaylıkla Discord Bot Kodlarına veya Altyapılarına Ulaşabilirsiniz.">
+<meta property="og:type" content="website">
+<meta property="og:footer" content="Developed by Voxic">
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/853166696214691851/963044356179234856/ankacode3.png">
+<title>Anka Code - Admin Paneli</title>
+<link rel="icon" href="<%= icon %>" type="image/x-icon" />
+<link rel="stylesheet" href="/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+<nav style="margin-left:2%;margin-right:0%;"class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top" id="mainNav">
+  <a class="deneme navbar-brand" style="margin-left:7px;padding:7px" href="/"><img src="<%= icon %>" style="border-radius: 100%" width="30" height="30">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="deneme nav-item dropdown">
+        <a class="nav-item nav-link active  dropdown-toggle" href="#" data-toggle="dropdown"><i class="fas fa-code"></i> Kodlar</a>
+        <div class="dropdown-menu bg-transparent">
+           <a class="dropdown-item font-weight-bold" href="/js" style="color: #ffcc00;"><i class="fab fa-js-square"></i> JavaScript</a>
+           <a class="dropdown-item font-weight-bold" href="/html" style="color: #ffcc00;"><i class="fab fa-html5"></i> HTML</a>
+           <a class="dropdown-item font-weight-bold" href="/altyapi" style="color: #ffcc00;"><i class="fas fa-file-code"></i> Altyapı</a>
+          <a class="dropdown-item font-weight-bold" href="/diger" style="color: #ffcc00;"><i class="fas fa-code"></i> Diğer</a>
+          <div class="dropdown-divider" style="border-top:1px solid #5865f2"></div>
+            <a class="dropdown-item font-weight-bold" href="/topluluk" style="color: #ffcc00;"><i class="fas fa-users"></i></i> Sizden Gelenler</a>
+                    <li class="deneme nav-item dropdown">
+                 <a class="nav-item nav-link active  dropdown-toggle" href="#" data-toggle="dropdown"><i class="far fa-gem"></i> Özel Kodlar</a>
+                     <div class="dropdown-menu bg-transparent">
+                  <a class="dropdown-item font-weight-bold" href="/jsplus" style="color: #ffcc00;"><i class="fas fa-plus-square"></i></i> JavaScript+</a>
+                    <a class="dropdown-item font-weight-bold" href="/bdfd" style="color: #ffcc00;"><i class="fas fa-terminal"></i></i> BDFD</a>
+  <a class="dropdown-item font-weight-bold" href="/altyapiplus" style="color: #ffcc00;"><i class="far fa-plus-square"></i></i></i> Altyapı+</a>
+           </div>
+        
+      </li>
+<li class="deneme nav-item">
+          <a class="nav-item nav-link active" href="/authorized"><i class="fas fa-user-shield"></i></i> Yetkililerimiz</a>
+      </li>
+      <li class="deneme nav-item">
+        <a class="nav-item nav-link active" href="/information"><i class="fas fa-info-circle"></i> Bilgilendirme</a>
+      </li>
+<li class="deneme nav-item">
+        <a class="nav-item nav-link active" href="/premium"><i class="fas fa-shopping-basket"></i></i> Premium Al</a>
+      </li>
+    </ul>
+
+    <% if (user) { %>
+    <ul class="navbar-nav" style="margin-right:31px;">
+      <% if (reqMember && reqMember.hasPermission(8)) { %>
+      <li class="deneme nav-item">
+       <a class="nav-item nav-link active" href="/admin"><i class="fas fa-user-cog"></i> Admin Paneli</a>
+      </li>
+      <% } %>
+      <li class="deneme nav-item">
+      <a class="nav-item nav-link active" href="/paylas"><i class="fas fa-plus"></i> Kod Paylaş</a>
+      </li>
+
+      <li class="deneme nav-item dropdown">
+        <a class="nav-item nav-link active dropdown-toggle"><%= user.username %></a>
+        <div class="dropdown-menu bg-transparent dropdown-menu-right">
+          <a class="btn btn-outline-light" href="/profil/<%= user.id %>"><i class="far fa-user"></i> Profil</a
+            >
+          <div class="dropdown-divider"></div>
+         <a class="btn btn-outline-danger" href="/logout"
+              ><i class="fas fa-sign-out-alt"></i> Çıkış Yap</a
+            >
+        </div>
+      </li>
+    </ul>
+
+   <% } else { %>
+      <a class="btn btn-outline-dark" style="margin-right: 20px; filter: invert(1);" href="/login"><i class="fas fa-sign-out-alt"></i> Giriş Yap</a>
+    <% } %>
+  </div>
+</nav>
+<%- include('partials/_header'); -%>
+    <%- include('partials/_loader'); -%>
+    <div class="container" style="min-height: 78vh; text-align: center;">
+      <div class="row row-cols-1 row-cols-md-2" style="margin-top: 100px;">
+      <h4>
+        24 Saat İçinde Paylaşılan Kod Sayısı:<br><%= code.filter(x => (Date.now() - x.date) <= 1000 * 60 * 60 * 24).length %>
+      </h4>
+      <h4>
+        7 Gün İçinde Paylaşılan Kod Sayısı:<br><%= code.filter(x => (Date.now() - x.date) <= 1000 * 60 * 60 * 24 * 7).length %>
+      </h4>
+      </div>
+      <table class="table table-hover table-dark" style="margin-top: 40px;">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">İsim</th>
+            <th scope="col">Açıklama</th>
+            <th scope="col">Paylaşan</th>
+            <th scope="col">Sil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% code.forEach((x, i) => { %>
+          <tr>
+            <th scope="row"><%= i+1 %></th>
+            <td><%= x.name %></td>
+            <td><%= x.desc %></td>
+            <td><%= x.sharers[0] %></td>
+            <td><a href="/delete/<%= x.rank %>/<%= x.id %>" class="btn btn-outline-danger">Kodu sil</a></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      if (localStorage.getItem("mode") != "") {
+        document.body.classList.add(localStorage.getItem("mode"));
+        document.getElementById("mode-btn").checked = true;
+      }
+    </script>
+    <script src="/index.js"></script>
+    <%- include('partials/_footer'); -%>
+  </body>
+</html>
