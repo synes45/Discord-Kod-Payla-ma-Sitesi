@@ -27,6 +27,6 @@ Selam, bu altyapı bütün kod paylaşım sitelerinin orospusudur. Herkes bunu k
 * Herhangi bir hata bulmanız durumunda ya da yardım isteyeceğiniz zaman buralardan bana ulaşabilirsiniz.
 
 
-<img src="(https://cdn.discordapp.com/attachments/977869347458535424/978034908037546015/unknown.png)">
+<img src="https://cdn.discordapp.com/attachments/977869347458535424/978034908037546015/unknown.png">
 voksik abi üzgün :(
 hadi gereken işlemleri uygula amk :D
