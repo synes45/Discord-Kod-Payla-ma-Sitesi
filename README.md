@@ -16,7 +16,7 @@ Selam, bu altyapı bütün kod paylaşım sitelerinin orospusudur. Herkes bunu k
 * [Glitch Linki](https://glitch.com/edit/#!/animated-highfalutin-jam)
 
 # Görseller:
-<img src="https://cdn.discordapp.com/attachments/806816221471047721/807732507311079424/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/977869347458535424/978022505082155117/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/977869347458535424/978022536862388275/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/977869347458535424/978022579539411015/unknown.png">
 
