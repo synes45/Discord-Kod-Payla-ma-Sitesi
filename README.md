@@ -25,3 +25,5 @@ Selam, bu altyapı bütün kod paylaşım sitelerinin orospusudur. Herkes bunu k
 * [Discord Profilim](https://discord.com/users/842858705468260393)
 * [Web Sitem](https://klavyeefendisi.com)
 * Herhangi bir hata bulmanız durumunda ya da yardım isteyeceğiniz zaman buralardan bana ulaşabilirsiniz.
+
+hadi gereken işlemleri uygula amk :D
