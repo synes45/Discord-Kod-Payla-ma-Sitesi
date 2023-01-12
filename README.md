@@ -1,6 +1,6 @@
 # Discord Code Sharing Website
 
-Selam, bu altyapı bütün kod paylaşım sitelerinin orospusudur. Herkes bunu kullanır. Projenin ilk hali [theark](https://github.com/thearkxd)'a aittir. 
+Projenin ilk hali [theark](https://github.com/thearkxd)'a aittir. 
 
 # Kurulum
 * İlk olarak bilgisayarına [Node JS](https://nodejs.org/en/) indir.
@@ -25,8 +25,3 @@ Selam, bu altyapı bütün kod paylaşım sitelerinin orospusudur. Herkes bunu k
 * [Discord Profilim](https://discord.com/users/842858705468260393)
 * [Web Sitem](https://klavyeefendisi.com)
 * Herhangi bir hata bulmanız durumunda ya da yardım isteyeceğiniz zaman buralardan bana ulaşabilirsiniz.
-
-
-<img src="https://cdn.discordapp.com/attachments/977869347458535424/978034908037546015/unknown.png">
-voksik abi üzgün :(
-hadi gereken işlemleri uygula amk :D
